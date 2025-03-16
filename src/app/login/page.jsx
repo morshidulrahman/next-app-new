@@ -9,6 +9,10 @@ const Page = () => {
     window.location.href = "http://localhost:5000/auth/facebook";
   };
 
+  const handlelinkedinLogin = () => {
+    window.location.href = "http://localhost:5000/auth/linkedin";
+  };
+
   return (
     <div className="h-screen flex justify-center items-center gap-4">
       <button
@@ -22,6 +26,12 @@ const Page = () => {
         className="px-3 py-3 bg-red-300 rounded-none"
       >
         facebook
+      </button>
+      <button
+        onClick={handlelinkedinLogin}
+        className="px-3 py-3 bg-red-300 rounded-none"
+      >
+        linkedin
       </button>
     </div>
   );
